@@ -51,8 +51,8 @@ class RecipeTest < ActiveSupport::TestCase
     assert_not @recipe.valid?
   end
 
-  test "description length should be maximum 500 characters" do
-    @recipe.description = "a" * 501
+  test "description length should be maximum 1500 characters" do
+    @recipe.description = "a" * 1501
     assert_not @recipe.valid?
   end
 
